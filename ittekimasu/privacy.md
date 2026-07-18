@@ -1,0 +1,52 @@
+# いってきます プライバシーポリシー / Privacy Policy
+
+最終更新日: 2026年7月18日
+
+## 日本語
+
+いってきます（以下「本アプリ」）は、ユーザーのプライバシーを尊重します。本ポリシーでは、本アプリにおける情報の取り扱いを説明します。
+
+### 1. データの保存場所
+本アプリで入力されたすべてのデータ（持ち物、予定、出発時刻、カテゴリ、各種設定）は、**お使いの端末内にのみ保存**されます。開発者を含む第三者のサーバーに送信・保存されることはありません。
+
+### 2. アカウント
+本アプリにアカウント登録はありません。氏名・メールアドレス等の個人情報を取得しません。
+
+### 3. 通知
+出発時刻の通知は、お使いの端末内で処理されるローカル通知です。通知の内容が外部に送信されることはありません。
+
+### 4. 位置情報
+本アプリは、設定の「雨の日に傘を自動で追加」を**ユーザーが有効にした場合にのみ**、位置情報を使用します。この機能は初期状態では無効です。
+
+有効にした場合、現在地のおおよその座標が天気予報サービス [Open-Meteo](https://open-meteo.com/) に送信され、降水確率の取得のみに使用されます。この通信にユーザーを識別する情報は含まれません。開発者がこの情報を収集・保存することはありません。位置情報の利用は端末の設定からいつでも無効にできます。
+
+### 5. 音声入力
+持ち物の入力には、iOS 標準のキーボードの音声入力（ディクテーション）をご利用いただけます。これは Apple が提供する OS の機能であり、その音声データの取り扱いは Apple のプライバシーポリシーに従います。本アプリが音声データを取得・保存することはありません。
+
+### 6. AI による解析（任意・上級者向け）
+設定画面で**ユーザー自身が API キーを入力した場合にのみ**、入力した文章が Anthropic 社の API に送信され、持ち物と時刻の抽出に使用されます。API キーは初期状態では未設定であり、この機能は既定では動作しません（端末内のルールベース解析にフォールバックします）。入力された API キーは端末内にのみ保存され、開発者に送信されることはありません。この機能を利用する場合、送信された文章の取り扱いは Anthropic 社のポリシーに従います。
+
+### 7. 解析・広告
+本アプリは、アクセス解析ツール・広告SDK・トラッキング技術を一切使用していません。
+
+### 8. データの削除
+各データの削除は本アプリ内からいつでも行えます。アプリを削除すると、端末内のすべてのデータが削除されます。
+
+### 9. お問い合わせ
+本ポリシーに関するお問い合わせ: tomjoepatience@gmail.com
+
+---
+
+## English
+
+Ittekimasu ("the App") respects your privacy.
+
+- **Local-only storage**: All data entered in the App (items, plans, departure times, categories, settings) is stored only on your device. Nothing is uploaded to or stored on any server.
+- **No account**: The App has no account system and collects no personal information.
+- **Notifications**: Departure reminders are local notifications processed entirely on your device.
+- **Location** *(opt-in, off by default)*: Only if you enable "add an umbrella on rainy days" does the App use your location. Your approximate coordinates are sent to [Open-Meteo](https://open-meteo.com/) solely to retrieve the chance of rain. These requests contain no user identifiers, and the developer does not collect or retain this data. You can disable location access at any time in your device settings.
+- **Voice input**: Item entry can use the standard iOS keyboard dictation. This is an Apple OS feature governed by Apple's privacy policy; the App itself does not capture or store audio.
+- **AI parsing** *(optional, advanced)*: Only if you enter your own API key in Settings is your typed text sent to Anthropic's API to extract items and times. No key is configured by default, so the App uses on-device rule-based parsing instead. Your API key is stored only on your device and is never sent to the developer. If you use this feature, the handling of submitted text is governed by Anthropic's policies.
+- **No analytics or ads**: The App contains no analytics tools, ad SDKs, or trackers.
+- **Deletion**: Deleting the App removes all data from your device.
+- **Contact**: tomjoepatience@gmail.com
