@@ -1,53 +1,82 @@
 # タビカケ プライバシーポリシー / Privacy Policy
 
-最終更新日: 2026年8月12日
+最終更新日: 2026年8月25日
 
 ## 日本語
 
-タビカケ（以下「本アプリ」)は、ユーザーのプライバシーを尊重します。本ポリシーでは、本アプリにおける情報の取り扱いを説明します。
+タビカケ（以下「本アプリ」）は、ユーザーのプライバシーを尊重します。本ポリシーでは、本アプリにおける情報の取り扱いを説明します。
 
 ### 1. データの保存場所
-本アプリで記録されたデータ（支出金額、写真、場所、メモ、カテゴリ、イベント、アルバム）は、原則として**お使いの端末内にのみ保存**されます。共有機能（第3項）を利用する場合に限り、共有対象のデータがサーバーに保存されます。
+本アプリで記録されたデータ（支出金額、写真、場所、メモ、ジャンル、旅、アルバム、天気）は、原則として**お使いの端末内にのみ保存**されます。共有機能（第3項）を利用する場合に限り、共有対象のデータがサーバーに保存されます。
 
 ### 2. アカウント
-本アプリの利用にアカウント登録は不要です。氏名・メールアドレス・電話番号等の連絡先情報は一切取得しません。共有機能を利用する場合のみ、任意の表示名（ニックネーム可）と、アプリが自動生成する匿名IDが作成されます。
+アカウントを作成しなくても、記録・地図・アルバムなど本アプリの基本機能は利用できます。友達との共有機能を利用する場合、以下のいずれかの方法でアカウントを作成できます。
 
-### 3. 共有機能（共有ブック・サークル。いずれも任意の機能）
-共有ブック（共有家計簿）またはサークル（スポット共有）を利用する場合に限り、以下の情報が当方のサーバーに保存されます:
-- 任意の表示名と匿名のユーザーID（Vercel / Neon、シンガポールリージョン）
-- 共有ブックに追加した記録、およびサークルへ共有をONにした記録（金額・店名/場所・カテゴリ名・メモ・日時・位置座標・割り勘の設定）
-- **共有をONにした記録に添付された写真（縮小版）**。写真は非公開ストレージ（Cloudflare R2）に保存され、有効期限付きの署名URLを通じて、同じブック・サークルのメンバーのみが閲覧できます
+- **名前と@IDのみ**（メールアドレス不要の匿名アカウント）
+- **メールアドレスとパスワード**
+- **Google アカウント / Apple アカウント**（この場合、認証基盤である Supabase を通じて、メールアドレス等の基本的なアカウント情報を受け取ります）
 
-記録の共有・写真の共有はいずれも**記録ごとに手動でONにしたときだけ**行われます（初期設定はOFF）。これらの情報は、メンバー間での表示・集計のみに使用され、第三者への提供・広告目的の利用は一切ありません。共有した記録・写真は作成者がいつでも共有解除・削除でき、ブックやサークルから脱退・削除した場合も対応するデータはサーバーから削除されます。データの完全削除をご希望の場合は、下記の連絡先までお問い合わせください。共有機能を使わない限り、すべてのデータは従来どおり端末内にのみ保存されます。
+取得した情報は、ログイン・アカウントの識別・機種変更時の引き継ぎのためにのみ使用します。認証情報は Supabase（Supabase Inc.）で管理されます。
 
-### 4. プッシュ通知（任意）
-サークルで新しいスポットが共有されたことをお知らせするため、通知を許可した場合に限り、端末の通知用トークン（Expo Push Token。氏名等を含まない、通知配信のためだけの識別子）がサーバーに保存されます。通知はOSの設定からいつでもオフにでき、オフにしてもアプリの他の機能に影響はありません。
+### 3. 共有機能（フォロー・投稿・みんなとの旅。いずれも任意の機能）
+友達との共有機能を利用する場合に限り、以下の情報が当方のサーバーに保存されます:
 
-### 5. 位置情報
-本アプリは、支出した場所の店名を提案するために位置情報を使用します。この際、現在地の座標が地図データサービス（Google Places API、OpenStreetMap Nominatim / Overpass API）に送信されますが、これは店名・地名の検索のみを目的とした一時的な通信であり、ユーザーを識別する情報は含まれません。開発者がこの通信を収集・保存することはありません。位置情報の利用は端末の設定からいつでも無効にできます。
+- 表示名・@ID・任意のアイコン画像
+- 「みんなに共有」をONにした記録（店名/場所・ジャンル名・ひとこと・日時・位置座標・任意で金額）
+- みんなとの旅（共有家計簿）に追加した記録と精算情報
+- 共有した旅のスナップショット（タイトル・期間・スポット・任意で金額）
+- 一緒にいた人のメンション、コメント、いいね等のリアクション
+- 共有をONにした記録・旅に添付された写真（縮小版）。写真は非公開ストレージ（Cloudflare R2）に保存され、有効期限付きの署名URLを通じて、閲覧権限のある相手のみが閲覧できます
 
-### 6. 写真
-写真ライブラリおよびカメラへのアクセスは、支出の記録に写真を添付する目的でのみ使用されます。写真は原則として端末内にのみ保存され、あなたが記録の共有をONにした場合に限り、縮小版が第3項のとおりサーバーに保存されます。
+すべてのアカウントは**非公開**であり、投稿はあなたが承認したフォロワーだけが閲覧できます。記録・金額・写真の共有はいずれも**記録ごとに手動で選択したときだけ**行われます。これらの情報は、承認した相手との表示・集計のみに使用され、第三者への提供・広告目的の利用は一切ありません。共有した内容は作成者がいつでも削除でき、アカウント削除時には対応するデータもサーバーから削除されます。完全削除のご希望は下記連絡先までお問い合わせください。
 
-### 7. 解析・広告
-本アプリは、アクセス解析ツール・広告SDK・トラッキング技術を一切使用していません。
+### 4. 安全のための機能
+ユーザーのブロック・通報機能を提供しています。通報内容（通報理由・対象）は、不正利用の防止とコミュニティの安全のためにサーバーに保存されます。
 
-### 8. データの削除
-記録の削除は本アプリ内からいつでも行えます。アプリを削除すると、端末内のすべてのデータが削除されます（共有機能を利用していた場合、サーバー上の共有データの削除は第3項をご覧ください）。
+### 5. プッシュ通知（任意）
+フォロー申請や旅の更新をお知らせするため、通知を許可した場合に限り、端末の通知用トークン（Expo Push Token。氏名等を含まない、通知配信のためだけの識別子）がサーバーに保存されます。通知はOSの設定からいつでもオフにできます。
 
-### 9. お問い合わせ
-本ポリシーに関するお問い合わせ: tomjoepatience@gmail.com
+### 6. 位置情報
+本アプリは、記録した場所の店名を提案するため、および地図上での現在地表示のために位置情報を使用します。この際、現在地の座標が地図データサービス（Google Places API、OpenStreetMap Nominatim / Overpass API）および天気情報サービス（Open-Meteo）に送信されますが、これは店名・地名・天気の取得のみを目的とした一時的な通信であり、ユーザーを識別する情報は含まれません。位置情報の利用は端末の設定からいつでも無効にできます。
+
+### 7. 写真
+写真ライブラリおよびカメラへのアクセスは、記録に写真を添付する目的、およびQRコードの読み取りのためにのみ使用されます。写真は原則として端末内にのみ保存され、あなたが共有をONにした場合に限り、縮小版が第3項のとおりサーバーに保存されます。
+
+### 8. 広告
+本アプリは、Google AdMob によるバナー広告を表示する場合があります。広告は**パーソナライズされていない広告**のみを配信しており、トラッキングの許可（ATT）を求めることはありません。AdMob は広告配信のために端末情報（デバイスの種類、おおよその位置、広告表示に関する情報）を使用する場合があります。詳細は [Google のプライバシーポリシー](https://policies.google.com/privacy) をご覧ください。
+
+### 9. 不正利用対策
+アカウント作成時のボット対策として、Cloudflare Turnstile による確認を行う場合があります。この際、Cloudflare が判定のために技術情報（IPアドレス等）を処理します。
+
+### 10. 分析・トラッキング
+本アプリは、上記に記載したもの以外のアクセス解析・行動トラッキングを行いません。
+
+### 11. データの削除
+アプリをアンインストールすると、端末内のデータは削除されます。サーバー上の共有データの削除は、アプリ内の削除機能をご利用いただくか、下記までご連絡ください。
+
+### 12. お問い合わせ
+本ポリシーに関するご質問は、下記までお願いします。
+
+📧 tomjoepatience@gmail.com
+
+### 13. 変更
+本ポリシーは、機能追加等に応じて変更されることがあります。重要な変更がある場合は、アプリ内でお知らせします。
+
+---
 
 ## English
 
 Tabikake ("the App") respects your privacy.
 
-- **Local-first storage**: Data recorded in the App (amounts, photos, places, memos, categories, events, albums) is stored on your device. Only if you use the optional sharing features, the shared data is stored on our server.
-- **No contact information**: The App never collects your name, email address, or phone number. If you use a sharing feature, an optional display name (nickname) and an anonymous, app-generated user ID are created.
-- **Sharing features (Shared Books & Circles — both optional)**: When you use Shared Books or Circles, the following is stored on our server: your display name and anonymous user ID (Vercel / Neon, Singapore region); the records you add to shared books or explicitly share to circles (amount, place name, category name, memo, date, coordinates, and split settings); and **downsized copies of photos attached to records you chose to share**. Photos are kept in private storage (Cloudflare R2) and are viewable only by members of the same book/circle via expiring signed URLs. Sharing is **opt-in per record** (off by default). This data is used solely to display and aggregate records among members, and is never shared with third parties or used for advertising. You can stop sharing or delete your shared records and photos at any time; leaving or deleting a book/circle also removes the corresponding data from the server. Contact us for complete data deletion. If you never use the sharing features, all data stays on your device.
-- **Push notifications (optional)**: If you allow notifications, a push token (Expo Push Token — an identifier used only to deliver notifications, containing no personal details) is stored on our server to notify you when a new spot is shared in your circles. You can turn notifications off in your OS settings at any time.
-- **Location**: Your coordinates are sent to map data services (Google Places API, OpenStreetMap Nominatim / Overpass API) solely to suggest nearby place names. These requests contain no user identifiers, and the developer does not collect or retain this data.
-- **Photos**: Photo library and camera access are used only to attach photos to your records. Photos stay on your device unless you explicitly share a record, in which case a downsized copy is stored as described above.
-- **No analytics or ads**: The App contains no analytics tools, ad SDKs, or trackers.
-- **Deletion**: Deleting the App removes all data from your device. For server-side shared data, see the sharing section above.
-- **Contact**: tomjoepatience@gmail.com
+- **Local first**: Your records (amounts, photos, places, memos, genres, trips, weather) are stored on your device. Data is uploaded to our server only when you explicitly use sharing features.
+- **Accounts**: You can create an account with just a display name and handle (no email), with email/password, or via Google / Apple sign-in (basic account info is received through our auth provider, Supabase).
+- **Sharing**: All accounts are private; only approved followers can see your shared posts. Shared records (place, genre, note, optional amount), shared trips, mentions, comments, reactions, and reduced-size photos are stored on our server (photos in private Cloudflare R2 storage, accessible only via expiring signed URLs). We never sell data or use it for advertising profiles.
+- **Safety**: Block and report features are provided; report details are stored to keep the community safe.
+- **Push notifications** (optional): Only an anonymous Expo Push Token is stored.
+- **Location**: Coordinates are sent transiently to map services (Google Places, OSM Nominatim/Overpass) and the weather service (Open-Meteo) solely to suggest place names and fetch weather. No identifying information is included.
+- **Ads**: The App may show Google AdMob banner ads. Only non-personalized ads are served; the App does not request App Tracking Transparency.
+- **Anti-abuse**: Cloudflare Turnstile may be used at sign-up.
+- **No other tracking**: The App performs no other analytics or tracking.
+- **Deletion**: Uninstalling removes on-device data. To delete server-side shared data, use in-app deletion or contact us.
+
+Contact: tomjoepatience@gmail.com

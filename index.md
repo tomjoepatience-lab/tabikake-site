@@ -18,3 +18,7 @@
 ## プライバシーポリシー
 
 [プライバシーポリシー / Privacy Policy](./privacy)
+
+## 利用規約
+
+[利用規約 / Terms of Service](./terms)
