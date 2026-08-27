@@ -1,6 +1,6 @@
 # タビカケ プライバシーポリシー / Privacy Policy
 
-最終更新日: 2026年8月25日
+最終更新日: 2026年8月27日
 
 ## 日本語
 
@@ -48,6 +48,9 @@
 ### 9. 不正利用対策
 アカウント作成時のボット対策として、Cloudflare Turnstile による確認を行う場合があります。この際、Cloudflare が判定のために技術情報（IPアドレス等）を処理します。
 
+### 9.5 フィードバック送信（任意）
+アプリ内の「不具合・要望を送る」を利用した場合、入力内容・添付した画像・アプリのバージョン・OS の種類とバージョン・ユーザーID（登録済みの場合）が当方のサーバーに保存され、開発者へメールで通知されます。これらは不具合の再現と改善のためにのみ使用します。「返信をもらう」を選んだ場合に限り、登録メールアドレスへ返信することがあります。
+
 ### 10. 分析・トラッキング
 本アプリは、上記に記載したもの以外のアクセス解析・行動トラッキングを行いません。
 
@@ -76,6 +79,7 @@ Tabikake ("the App") respects your privacy.
 - **Location**: Coordinates are sent transiently to map services (Google Places, OSM Nominatim/Overpass) and the weather service (Open-Meteo) solely to suggest place names and fetch weather. No identifying information is included.
 - **Ads**: The App may show Google AdMob banner ads. Only non-personalized ads are served; the App does not request App Tracking Transparency.
 - **Anti-abuse**: Cloudflare Turnstile may be used at sign-up.
+- **Feedback** (optional): When you use "Send feedback" in the App, your message, attached images, app version, OS type/version, and user ID (if registered) are stored and emailed to the developer solely to reproduce and fix issues. We reply to your registered email only if you opt in.
 - **No other tracking**: The App performs no other analytics or tracking.
 - **Deletion**: Uninstalling removes on-device data. To delete server-side shared data, use in-app deletion or contact us.
 
