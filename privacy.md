@@ -12,9 +12,10 @@
 ### 2. アカウント
 アカウントを作成しなくても、記録・地図・アルバムなど本アプリの基本機能は利用できます。友達との共有機能を利用する場合、以下のいずれかの方法でアカウントを作成できます。
 
-- **名前と@IDのみ**（メールアドレス不要の匿名アカウント）
-- **メールアドレスとパスワード**
-- **Google アカウント / Apple アカウント**（この場合、認証基盤である Supabase を通じて、メールアドレス等の基本的なアカウント情報を受け取ります）
+- **メールアドレスとパスワード**（登録時に確認メールをお送りします。送信元は `noreply@tabikake.app` です）
+- **Apple アカウント**（この場合、認証基盤である Supabase を通じて、メールアドレス等の基本的なアカウント情報を受け取ります。Apple の「メールを非公開」を選んだ場合は中継アドレスが登録されます）
+
+以前に名前と@IDだけで作成したアカウントは引き続き利用できます。機種変更に備えてメールアドレスの追加をおすすめしています。
 
 取得した情報は、ログイン・アカウントの識別・機種変更時の引き継ぎのためにのみ使用します。認証情報は Supabase（Supabase Inc.）で管理されます。
 
@@ -72,7 +73,7 @@
 Tabikake ("the App") respects your privacy.
 
 - **Local first**: Your records (amounts, photos, places, memos, genres, trips, weather) are stored on your device. Data is uploaded to our server only when you explicitly use sharing features.
-- **Accounts**: You can create an account with just a display name and handle (no email), with email/password, or via Google / Apple sign-in (basic account info is received through our auth provider, Supabase).
+- **Accounts**: You can create an account with email/password (a confirmation email is sent from noreply@tabikake.app) or via Apple sign-in (basic account info is received through our auth provider, Supabase). Accounts created earlier with only a display name and handle keep working.
 - **Sharing**: All accounts are private; only approved followers can see your shared posts. Shared records (place, genre, note, optional amount), shared trips, mentions, comments, reactions, and reduced-size photos are stored on our server (photos in private Cloudflare R2 storage, accessible only via expiring signed URLs). We never sell data or use it for advertising profiles.
 - **Safety**: Block and report features are provided; report details are stored to keep the community safe.
 - **Push notifications** (optional): Only an anonymous Expo Push Token is stored.
