@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<link rel="stylesheet" href="/assets/style.css">
+<meta name="theme-color" content="#F7F6F2">
+</head>
+<body>
+
+<main class="page">
+  {{ content }}
+</main>
+
+<footer class="site-footer">
+  <div class="foot">
+    <p class="foot-mail"><a href="mailto:tomjoepatience@gmail.com">tomjoepatience@gmail.com</a></p>
+    <p class="foot-copy">&copy; {{ 'now' | date: "%Y" }} tomjo</p>
+  </div>
+</footer>
+
+</body>
+</html>

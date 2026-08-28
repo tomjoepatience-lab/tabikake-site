@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title }}{% unless page.bare_title %} | {{ site.title }}{% endunless %}{% else %}{{ site.title }}{% endif %}</title>
+<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/icon-256.png">
+<link rel="stylesheet" href="/assets/style.css">
+<meta name="theme-color" content="#F7F6F2">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:image" content="{{ site.url }}/assets/icon.png">
+<meta name="twitter:card" content="summary">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="bar">
+    <a class="brand" href="/">
+      <img class="brand-mark" src="/assets/favicon.png" width="32" height="32" alt="">
+      <span class="brand-word">tabikake</span>
+    </a>
+    <nav class="site-nav">
+      <a href="/privacy">プライバシー</a>
+      <a href="/terms">利用規約</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  {{ content }}
+</main>
+
+<footer class="site-footer">
+  <div class="foot">
+    <p class="foot-links">
+      <a href="/">ホーム</a>
+      <a href="/privacy">プライバシーポリシー</a>
+      <a href="/terms">利用規約</a>
+    </p>
+    <p class="foot-mail"><a href="mailto:tomjoepatience@gmail.com">tomjoepatience@gmail.com</a></p>
+    <p class="foot-copy">&copy; {{ 'now' | date: "%Y" }} tabikake</p>
+  </div>
+</footer>
+
+</body>
+</html>
