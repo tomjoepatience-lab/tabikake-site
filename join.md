@@ -15,21 +15,27 @@ permalink: /join
 
 ## 参加方法
 
+<p><a id="open-app" href="#" style="display:inline-block;border-radius:999px;padding:12px 20px;background:#3d8361;color:white;font-weight:700;text-decoration:none;">アプリで開いて参加する</a></p>
+
+アプリが開かない場合は、次の手順で参加できます。
+
 1. タビカケを開く
-2. 下部の「共有」タブを開く
-3. 「コードで参加」を選ぶ
+2. 下部の「旅」タブ →「ブック」を開く
+3. 一番下の「招待された旅に参加」→「コードを入力」
 4. 上の招待コードを入力する
 
-<p><a href="https://apps.apple.com/app/id6779487027">App Storeでタビカケを開く</a></p>
+<p><a href="https://apps.apple.com/app/id6779487027">App Storeでタビカケをインストール</a></p>
 
 <script>
   (function () {
     var params = new URLSearchParams(window.location.search);
     var type = params.get('type');
     var code = (params.get('code') || '').toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, 32);
-    var kind = type === 'circle' ? 'サークルへの招待' : '共有ブックへの招待';
+    var kind = type === 'circle' ? 'サークルへの招待' : 'みんなとの旅への招待';
     document.getElementById('invite-kind').textContent = kind;
     document.getElementById('invite-code').textContent = code || 'コードがありません';
+    var openApp = document.getElementById('open-app');
+    openApp.href = code ? ('tabikake://join?code=' + code) : '#';
     document.getElementById('copy-code').addEventListener('click', function () {
       if (!code) return;
       navigator.clipboard.writeText(code).then(function () {
