@@ -5,7 +5,7 @@ title: いってきます プライバシーポリシー
 
 # いってきます プライバシーポリシー / Privacy Policy
 
-最終更新日: 2026年7月18日
+最終更新日: 2026年8月9日
 
 ## 日本語
 
@@ -25,6 +25,11 @@ title: いってきます プライバシーポリシー
 
 有効にした場合、現在地のおおよその座標が天気予報サービス [Open-Meteo](https://open-meteo.com/) に送信され、降水確率の取得のみに使用されます。この通信にユーザーを識別する情報は含まれません。開発者がこの情報を収集・保存することはありません。位置情報の利用は端末の設定からいつでも無効にできます。
 
+### 4-2. 行き先の天気（任意）
+予定に「行き先」を入力した場合、入力した地名は座標に変換するため Apple のジオコーディング機能（端末OSの機能）または [Open-Meteo](https://open-meteo.com/) の地名検索に送信され、得られた座標は Open-Meteo の天気予報の取得のみに使用されます。現在地は使用しません。この通信にユーザーを識別する情報は含まれず、開発者がこれらの情報を収集・保存することはありません。
+
+### 4-3. カレンダー（任意）
+「カレンダーから取り込む」を**ユーザーが操作した場合にのみ**、端末のカレンダーの予定（タイトル・時刻・場所）を読み取り、予定の作成に使用します。読み取った内容は端末内でのみ扱われ、外部に送信されることはありません（場所を行き先として使う場合は 4-2 の扱いになります）。カレンダーへの書き込みは行いません。
 ### 5. 音声入力
 持ち物の入力には、iOS 標準のキーボードの音声入力（ディクテーション）をご利用いただけます。これは Apple が提供する OS の機能であり、その音声データの取り扱いは Apple のプライバシーポリシーに従います。本アプリが音声データを取得・保存することはありません。
 
@@ -50,6 +55,8 @@ Ittekimasu ("the App") respects your privacy.
 - **No account**: The App has no account system and collects no personal information.
 - **Notifications**: Departure reminders are local notifications processed entirely on your device.
 - **Location** *(opt-in, off by default)*: Only if you enable "add an umbrella on rainy days" does the App use your location. Your approximate coordinates are sent to [Open-Meteo](https://open-meteo.com/) solely to retrieve the chance of rain. These requests contain no user identifiers, and the developer does not collect or retain this data. You can disable location access at any time in your device settings.
+- **Destination weather** *(optional)*: If you enter a destination for a plan, the place name is sent to Apple's on-device geocoding service or [Open-Meteo](https://open-meteo.com/) geocoding to obtain coordinates, which are used only to fetch the forecast from Open-Meteo. Your current location is not used. No user identifiers are included, and the developer does not collect or retain this data.
+- **Calendar** *(optional)*: Only when you tap "import from calendar" does the App read events (title, time, location) from your device calendar to create a plan. This data stays on your device and is never uploaded. The App never writes to your calendar.
 - **Voice input**: Item entry can use the standard iOS keyboard dictation. This is an Apple OS feature governed by Apple's privacy policy; the App itself does not capture or store audio.
 - **AI parsing** *(optional, advanced)*: Only if you enter your own API key in Settings is your typed text sent to Anthropic's API to extract items and times. No key is configured by default, so the App uses on-device rule-based parsing instead. Your API key is stored only on your device and is never sent to the developer. If you use this feature, the handling of submitted text is governed by Anthropic's policies.
 - **No analytics or ads**: The App contains no analytics tools, ad SDKs, or trackers.
