@@ -10,3 +10,7 @@ kramdown:
 
 exclude:
   - README.md
+
+# Universal Links の AASA（.well-known はドットフォルダなので明示しないと Jekyll が出力しない）
+include:
+  - ".well-known"
