@@ -1,11 +1,11 @@
 ---
-layout: bare
+layout: ittekimasu
 title: いってきます プライバシーポリシー
 ---
 
 # いってきます プライバシーポリシー / Privacy Policy
 
-最終更新日: 2026年8月9日
+最終更新日: 2026年9月1日
 
 ## 日本語
 
