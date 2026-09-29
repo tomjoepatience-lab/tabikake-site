@@ -1,11 +1,9 @@
 ---
-layout: default
+layout: hosu-banzuke
 title: 歩数番付 − 歩いて番付を駆け上がる
 description: "毎日の歩数を大相撲の取組に見立てて、序ノ口から横綱を目指す歩数アプリ。"
 permalink: /hosu-banzuke.html
 ---
-
-<img src="/hosu-banzuke/icon.png" alt="歩数番付" width="96" height="96" style="border-radius:22px">
 
 # 歩数番付
 
@@ -39,5 +37,3 @@ iPhone の「設定 > プライバシーとセキュリティ > モーション�
 ### 幕下以下の場所はなぜ 7 日なのですか？
 
 本場所でも幕下以下は 15 日間のうち 7 番だけ取ります。歩数番付では毎日取組があり、日目だけが一日目・三日目・五日目と進みます。
-
-[プライバシーポリシー](/hosu-banzuke/privacy.html)

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: hosu-banzuke
 title: 歩数番付 プライバシーポリシー
 description: "歩数番付のプライバシーポリシー。歩数データの取り扱い、保存場所、第三者提供について。"
 permalink: /hosu-banzuke/privacy.html
