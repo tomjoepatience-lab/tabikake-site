@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title }}{% else %}キャンセル帳{% endif %}</title>
+<meta name="description" content="{{ page.description | default: 'お風呂とご飯を「やった日」だけスタンプで記録する、責めない習慣アプリ「キャンセル帳」' }}">
+<link rel="icon" href="/cancel-cho/icon.png">
+<meta name="theme-color" content="#7955D9">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --primary:#7955D9; --deep:#5B3FB8; --soft:#E9E2FA; --bg:#FAF8FF; --ink:#2B2340; --muted:#8A83A3;
+  --line:#E3DCF5; --white:#fff; --blush:#F7B8C4;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:'Zen Maru Gothic','Hiragino Maru Gothic ProN','Yu Gothic UI',sans-serif;line-height:1.9;font-size:16px}
+.wrap{max-width:720px;margin:0 auto;padding:0 0 60px}
+.hero{background:linear-gradient(160deg,var(--primary) 0%,var(--deep) 100%);color:#fff;
+  padding:44px 24px 40px;text-align:center;border-radius:0 0 32px 32px}
+.hero img{width:104px;height:104px;border-radius:24px;box-shadow:0 10px 24px rgba(43,35,64,.3)}
+.hero .kicker{font-size:13px;letter-spacing:.2em;color:rgba(255,255,255,.85);margin:18px 0 6px}
+.hero h1{font-weight:900;font-size:38px;margin:0;letter-spacing:.08em}
+.hero p{margin:10px 0 0;color:rgba(255,255,255,.85);font-size:15px}
+.store{display:inline-block;margin-top:22px;background:#fff;color:var(--primary);text-decoration:none;
+  font-weight:900;padding:12px 28px;border-radius:999px;box-shadow:0 6px 14px rgba(43,35,64,.2)}
+.store:hover{background:var(--soft)}
+main{padding:8px 20px 0}
+main > img:first-child, main h1{display:none}
+main > p:first-of-type{text-align:center;font-weight:700;font-size:18px;color:var(--primary);margin:28px 0 8px}
+main h2{font-weight:900;font-size:20px;color:var(--primary);margin:40px 0 14px;padding:0 0 6px;border-bottom:3px solid var(--soft)}
+main h3{font-weight:700;font-size:16px;margin:24px 0 6px;color:var(--ink);padding-left:12px;border-left:4px solid var(--primary)}
+main ul{padding-left:0;list-style:none}
+main ul li{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:10px 16px 10px 44px;margin:8px 0;position:relative}
+main ul li::before{content:"●";position:absolute;left:16px;top:11px;color:var(--blush);font-size:14px}
+main a{color:var(--primary);font-weight:700;text-decoration:none;border-bottom:2px solid var(--soft)}
+main a:hover{border-bottom-color:var(--primary)}
+main strong{background:linear-gradient(transparent 60%,var(--soft) 60%);font-weight:700}
+main p{margin:12px 0}
+.site-footer{margin-top:56px;text-align:center;color:var(--muted);font-size:13px;padding:0 20px}
+.site-footer a{color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <img src="/cancel-cho/icon.png" alt="キャンセル帳 アイコン">
+    <div class="kicker">できることから ゆるく、つづけよう</div>
+    <h1>キャンセル帳</h1>
+    <p>お風呂とご飯を、押すだけで記録。</p>
+    <a class="store" href="https://apps.apple.com/app/id6815246037">App Store で入手</a>
+  </div>
+  <main>
+  {{ content }}
+  </main>
+  <footer class="site-footer">
+    <p><a href="mailto:tomjoepatience@gmail.com">tomjoepatience@gmail.com</a> ・ <a href="/cancel-cho/privacy.html">プライバシーポリシー</a></p>
+    <p>&copy; {{ 'now' | date: "%Y" }} tomjo</p>
+  </footer>
+</div>
+</body>
+</html>
