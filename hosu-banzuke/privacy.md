@@ -9,7 +9,7 @@ permalink: /hosu-banzuke/privacy.html
 
 最終更新日: 2026年11月25日 / Last updated: November 25, 2026
 
-## 日本語
+## 日本語 {#ja}
 
 歩数番付（以下「本アプリ」）は、ユーザーのプライバシーを尊重します。本ポリシーでは、本アプリにおける情報の取り扱いを説明します。
 
@@ -63,7 +63,7 @@ permalink: /hosu-banzuke/privacy.html
 ### 10. 改定
 本ポリシーは必要に応じて改定することがあります。改定した場合は本ページで公開します。
 
-## English
+## English {#en}
 
 Sumo Steps (歩数番付 in Japanese; "the App") respects your privacy. This policy explains how the App handles information.
 
@@ -87,7 +87,7 @@ Sumo Steps (歩数番付 in Japanese; "the App") respects your privacy. This pol
 9. **Contact**: please use the contact information listed on the App's page on the App Store or Google Play.
 10. **Changes**: this policy may be updated; changes will be posted on this page.
 
-## Español
+## Español {#es}
 
 Sumo Steps (歩数番付 en japonés; «la App») respeta tu privacidad. Esta política explica cómo trata la información la App.
 
@@ -111,7 +111,7 @@ Sumo Steps (歩数番付 en japonés; «la App») respeta tu privacidad. Esta po
 9. **Contacto**: usa los datos de contacto que aparecen en la página de la App en el App Store o en Google Play.
 10. **Cambios**: esta política puede actualizarse; los cambios se publicarán en esta página.
 
-## Français
+## Français {#fr}
 
 Sumo Steps (歩数番付 en japonais, « l’App ») respecte votre vie privée. Cette politique explique comment l’App traite les informations.
 
